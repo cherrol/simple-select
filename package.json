@@ -1,0 +1,22 @@
+{
+  "name": "simple-select",
+  "version": "1.0.0",
+  "private": true,
+  "author": "zhilingchen <zhiling.chen@davyin.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --mode=development --config=webpack.dev.config.js",
+    "prebuild": "rimraf ./dist/",
+    "build": "webpack --mode=production --config=webpack.prod.config.js"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "less-loader": "^8.1.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

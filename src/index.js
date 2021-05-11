@@ -94,5 +94,14 @@ window.onload = () => {
         }, 300)
       }
     })
+
+    // text on press enter => preventDefault and dispatch event blur
+    $text.addEventListener('keydown', function (e) {
+      if (e.code === 'Enter') {
+        e.preventDefault();
+        // dispatch event blur
+        this.blur();
+      }
+    })
   })
 }
